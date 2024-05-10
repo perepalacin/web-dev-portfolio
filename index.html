@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pere Palacin's Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="images/Ionic-Ionicons-Code-slash-sharp.32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="js/scrolls.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <ul>
+                <li>
+                    <button class="nav-buttons" id="homeButton">Home</button>
+                </li>
+                <li>
+                    <button class="nav-buttons" id="aboutButton">About me</button>
+                </li>
+                <li>
+                    <button class="nav-buttons" id="skillsButton">SKills</button>
+                </li>
+                <li>
+                    <button class="nav-buttons" id="projectsButton">Projects</button>
+                </li>
+            </ul>
+            </ul>
+            <button id="themeToggler" class="nav-buttons">
+                <img src="images/sun-icon.svg" alt="moon icon" id="sun">
+                <img src="images/moon-icon.svg" alt="moon icon" id="moon">
+                <p id="toggleLabel">Light mode</p>
+            </button>
+        </div>
+    </nav>
+    <div id="top"></div>
+    <main id="home">
+        <section>
+            <p class="greetings">Wellcome to my</p>
+            <h1 class="stretch-text-y section-title">FULLSTACK WEB</h1>
+            <h2 class="stretch-text-y-2 section-title">DEV PORTFOLIO</h2>
+            <p class="firm">by Pere Palacín</p>
+            <img class="hero-image" src="images/main.png"
+                alt="Black and white 2D ilustration of a guy with long hair wearing a hoodie" loading="lazy">
+            <!-- add A CHEVRON DOWN TO INDICATE THE USE TO KEEP SCROLLING -->
+        </section>
+    </main>
+    <svg class="icon" height="24" width="24" style="padding-top: 2rem;" viewBox="0 0 407.437 407.437"
+        xml:space="preserve">
+        <polygon points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 " />
+    </svg>
+    <!-- About me -->
+    <section id="about" class="core-section with-fadein-animation">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div style="display: flex; justify-content: center;">
+
+            <div class="about-me-text">
+                <p><span>Greetings,</span>
+                    <br>
+                    I am <span>Pere Palacín, a 25 y/o Industrial Engineer</span> from Barcelona and <span>Self-Taught Full
+                        Stack Developer</span> that is looking to quickstart his career in Tech as an
+                        <span>Aprentice/Junior</span> Full Stack Developer, Backend Developer, Frontend Developer or Data
+                        Scientist/Analyst.
+                        <br>
+                        <br>
+                        After my first few professional experiences as an Engineer, I rediscovered my <span>passion for
+                            programming</span> and Software in general. I would consider myself someone really <span>hungry for
+                                learning</span> and developing my own WebApps offers me exactly that in order to
+                                <span>keep up with the everchanging tech landscape.</span>
+                                <br>
+                                <br>
+                                I coded for the first time in <span>middleschool using C++</span>, I then learned
+                                <span>Visual Basic in Highschool</span> and <span>Python at University.</span> During the last few
+                                months, I have been studying on my own <span>JavaScript, React and ExpressJS, SQL and NoSQL</span>. This Website is a
+                                collection of all the projects I've done so far using this technologies.
+                                <br>
+                                <br>
+                                <span>Please enjoy!</span>
+                            </p>
+                            <aside>
+                                <a href="https://github.com/perepalacin" target="_blank">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" id="github" height="48"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/perepalacin/" target="_blank">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" id="linkedin" height="48"
+                                viewBox="0 0 24 24">
+                                <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </aside>
+                        
+                    </a>
+                </div>
+            </div>
+    </section>
+    <hr>
+    <!-- Skills -->
+    <section id="skills" class="core-section with-fadein-animation">
+        <h2 class="section-title">SKILLS</h2>
+        <ul class="skills-list">
+            <li class="with-fadein-animation">
+                <h3>
+                    Natural languages
+                </h3>
+                <ul>
+                    <li>
+                        <img src="images/Flag_of_Spain.svg" alt="Flag of Spain" width="48" loading="lazy">
+                        <p>Spanish</p>
+                        <span>(Native)</span>
+                    </li>
+                    <li>
+                        <img src="images/Flag_of_Catalonia.svg" alt="Flag of Catalonia" width="48" loading="lazy">
+                        <p>Catalan</p>
+                        <span>(Native)</span>
+                    </li>
+                    <li>
+                        <img src="images/Flag_of_the_United_Kingdom.svg" alt="Flag of the United Kingdom" width="48"
+                            loading="lazy">
+                        <p>English</p>
+                        <span>(Professional - C1)</span>
+                    </li>
+                    <li>
+                        <img src="images/Flag_of_France.svg" alt="Flag of France" width="48" loading="lazy">
+                        <p>French</p>
+                        <span>(Conversational - B2)</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="with-fadein-animation">
+                <h3>
+                    Programming Lenguages
+                </h3>
+                <ul>
+                    <li>
+                        <img src="images/Javascriptwhitejslogo.svg" alt="JavaScript's Logo" width="48" loading="lazy">
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="muted-border">
+                        <img src="images/Typescript_logo_2020.svg" alt="TypeScript's Logo" width="48" loading="lazy">
+                        <p>TypeScript</p>
+                    </li>
+                    <li>
+                        <img src="images/Python-logo-notext.svg" alt="Python's Logo" width="48" loading="lazy">
+                        <p>Python</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="with-fadein-animation">
+                <h3>
+                    Front End
+                </h3>
+                <ul>
+                    <li>
+                        <img src="images/HTML5_Badge.svg" alt="HTML5's Logo" width="48" loading="lazy">
+                        <p>HTML 5</p>
+                    </li>
+                    <li>
+                        <img src="images/Javascriptwhitejslogo.svg" alt="JavaScript's Logo" width="48" loading="lazy">
+                        <p>Vanilla JS</p>
+                    </li>
+                    <li>
+                        <img src="images/React-icon.svg" alt="ReactJS's Logo" width="48" loading="lazy">
+                        <p>React</p>
+                    </li>
+                    <li class="muted-border">
+                        <img src="images/nextjs-2.svg" alt="NextJS's Logo" width="48" loading="lazy">
+                        <p>NextJS <span>(React)</span></p>
+                    </li>
+                </ul>
+            </li>
+            <li class="with-fadein-animation">
+                <h3>
+                    Back End
+                </h3>
+                <ul>
+                    <li>
+                        <img src="images/Node.js_logo.svg" alt="Node JS's Logo" width="48" loading="lazy">
+                        <p>Node JS</p>
+                    </li>
+                    <li class="muted-border">
+                        <img src="images/Javascriptwhitejslogo.svg" alt="JavaScript's Logo" width="48" loading="lazy">
+                        <p>Express JS</p>
+                    </li>
+                    <li class="muted-border">
+                        <img src="images/nextjs-2.svg" alt="NextJS's Logo" width="48" loading="lazy">
+                        <p>NextJS <span>(Express JS)</span></p>
+                    </li>
+                </ul>
+            </li>
+            <li class="with-fadein-animation">
+                <h3>
+                    Database Management
+                </h3>
+                <ul>
+                    <li>
+                        <img src="images/mongodb-svgrepo-com.svg" alt="MongoDB's Logo" width="48" loading="lazy">
+                        <p>MongoDB</p>
+                    </li>
+                    <li>
+                        <img src="images/Sql_data_base_with_logo.svg" alt="SQL's Logo" width="48" loading="lazy">
+                        <p>SQL</p>
+                    </li>
+                    <li class="muted-border">
+                        <img src="images/Postgresql_elephant.svg" alt="PostgreSQL's Logo" width="48" loading="lazy">
+                        <p>PostgreSQL</p>
+                    </li>
+                    <li class="muted-border">
+                        <img src="images/MySQL.svg" alt="MySQL's Logo" width="84" loading="lazy">
+                        <p>MySQL</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="with-fadein-animation">
+                <h3>
+                    Styling
+                </h3>
+                <ul>
+                    <li>
+                        <img src="images/CSS3_logo.svg" alt="CSS 3's Logo" width="48" loading="lazy">
+                        <p>CSS 3</p>
+                    </li>
+                    <li>
+                        <img src="images/Tailwind_CSS_Logo.svg" alt="Tailwind CSS's Logo" width="48" loading="lazy">
+                        <p>Tailwind CSS</p>
+                    </li>
+                    <li>
+                        <img src="images/shadcn-ui-logo-EF735EC0E5-seeklogo.com.png" alt="Shadcn-ui's Logo" width="36"
+                            loading="lazy">
+                        <p>Shadcn-ui</p>
+                    </li>
+                    <li class="muted-border">
+                        <img src="images/material-ui-1.svg" alt="Material-UI's Logo" width="48" loading="lazy">
+                        <p>Material-UI</p>
+                    </li>
+                    <li class="muted-border">
+                        <img src="images/daisyui-logotype.svg" alt="daisyUI's Logo" width="86" loading="lazy">
+                        <p>daisyUI</p>
+                    </li>
+                </ul>
+            </li>
+            <h4 style="padding-top: 2rem; text-align: center; font-size: 2rem;">+ I can read the docs!</h4>
+            <!-- TODO: Deployment -->
+        </ul>
+    </section>
+    <hr>
+    <!-- Projects -->
+    <section id="projects" class="core-section with-fadein-animation">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="project-container with-fadein-animation">
+            <!-- Quotopia -->
+            <article class="project-article">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                <h4>CRUD: Quotopia</h4>
+                <div>
+                    <p>A FullStack quotes repository built with <span>NextJS, Tailwind and MongoDB</span> that leverages
+                        the power of server components to boost the performance of the site and its SEO.</p>
+                </div>
+                <br>
+                <div>
+                    <p class="negrita">Key functionalities:</p>
+                </div>
+                <div>
+                    <ul style="text-align: justify;">
+                        <li>
+                            <span style="font-weight: 700;">-</span> Semantic From and API endpoints creation to upload
+                            or edit your own quotes.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Server Side home page and individual quote page to
+                            search for quotes based on its contents, author name, topics even from your search engine.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Leveraged Tailwind CSS and ShadCN components to
+                            craft an appealing and responsive UI.
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <p class="negrita">Tech Stack:</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><span style="font-weight: 700;">-</span> Front End: React, NextJS (App Router), Tailwind CSS
+                        </li>
+                        <li><span style="font-weight: 700;">-</span> Back End: NextJS (App Router), MongoDB</li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <p class="negrit">Tags:</p>
+                </div>
+                <div>
+                    <ul class="project-tags-list">
+                        <li>#Responsive,</li>
+                        <li>#CRUD,</li>
+                        <li>#NoSQL</li>
+                    </ul>
+                </div>
+                <br>
+                <hr>
+                <div class="project-footer">
+                    <a href="https://github.com/perepalacin/quotopia" target="_blank" style="color: var(--body-bg);">
+                        <p>View site</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" width="16">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/perepalacin/quotopia" target="_blank">
+                        <p>View code</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" width="16">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </a>
+
+                </div>
+            </article>
+        </div>
+        <div class="project-container with-fadein-animation">
+            <!-- Factorial Fe -->
+            <article class="project-article">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                <h4>WIP - Factorial Clone Front End</h4>
+                <div>
+                    <p>A Front End clone of the ERP Software Factorial HR using <span>pure React + Vite and Plain
+                            CSS</span>. The project also laverages the use of external libraries such as React Calendar
+                        and
+                        React Flows.</p>
+                </div>
+                <br>
+                <div>
+                    <p class="negrita">Key functionalities:</p>
+                </div>
+                <div>
+                    <ul style="text-align: justify;">
+                        <li>
+                            <span style="font-weight: 700;">-</span> Use of Pure React to create a single page app,
+                            leveraging the power of React Hooks to create an interactive site.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Fast and enjoyable user experience with the use of
+                            React Router v6 for navigation.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Creation of an appealing UI using plain CSS only
+                            for
+                            high redability and maintainability of the code.
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <p class="negrita">Tech Stack:</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><span style="font-weight: 700;">-</span> Front End: Pure React + Vite, React Router v6,
+                            plain
+                            CSS</li>
+                        <li><span style="font-weight: 700;">-</span> Back End: -</li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <p class="negrit">Tags:</p>
+                </div>
+                <div>
+                    <ul class="project-tags-list">
+                        <li>#ERP,</li>
+                        <li>#Client Side Validation,</li>
+                        <li>#Front End,</li>
+                        <li>#CSS</li>
+                    </ul>
+                </div>
+                <br>
+                <hr>
+                <div class="project-footer">
+                    <a href="https://github.com/perepalacin/factorial-clone-app" target="_blank" style="color: var(--body-bg);">
+                        <p>View site</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" width="16">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/perepalacin/factorial-clone-app" target="_blank">
+                        <p>View code</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" width="16">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+        <div class="project-container with-fadein-animation">
+            <!-- Factorial BE -->
+            <article class="project-article">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                <h4>WIP - Factorial Clone Back End</h4>
+                <div>
+                    <p>A Back End clone of the ERP Software Factorial HR using <span>Node Js with Express JS and NeonDB
+                            (PostgreSQL)</span>. This project goes hand in hand with the Front End Factorial clone
+                        project
+                        as this serves the content to the front end.</p>
+                </div>
+                <br>
+                <div>
+                    <p class="negrita">Key functionalities:</p>
+                </div>
+                <div>
+                    <ul style="text-align: justify;">
+                        <li>
+                            <span style="font-weight: 700;">-</span> Build API endpoints ot serve content from the
+                            PostgreSQL DB to the front end.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Server side validation of all the POST and PATCH
+                            requests created by the client.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Implementation of the Build Version of the React
+                            Front
+                            End inside the Back End repo.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Learnt how to deploy webapps with Render.io.
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <p class="negrita">Tech Stack:</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><span style="font-weight: 700;">-</span> Front End: React build version</li>
+                        <li><span style="font-weight: 700;">-</span> Back End: Node JS, Express JS, PostgreSQL</li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <p class="negrit">Tags:</p>
+                </div>
+                <div>
+                    <ul class="project-tags-list">
+                        <li>#HTTPS,</li>
+                        <li>#ErrorHandling,</li>
+                        <li>#Deployment</li>
+                    </ul>
+                </div>
+                <br>
+                <hr>
+                <div class="project-footer">
+                    <a href="https://github.com/perepalacin/factorial-clone-app-backend" target="_blank" style="color: var(--body-bg);">
+                        <p>View site</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" width="16">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/perepalacin/factorial-clone-app-backend" target="_blank">
+                        <p>View code</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" width="16">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+        <div class="project-container with-fadein-animation">
+            <!-- FullFoods -->
+            <article class="project-article">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                <h4>WIP - FullFoods</h4>
+                <div>
+                    <p>A FullStack fully responsive social network WebApp designed with <span>NextJs, Tailwind CSS and
+                            Supabase (PostgreSQL)</span> that allows users to upload their own recipes and save ones
+                        from
+                        other users. The WebApp takes full advantatge of SQL's relations to build a seamless
+                        integreation
+                        between ingredients and recipes.</p>
+                </div>
+                <br>
+                <div>
+                    <p class="negrita">Key functionalities:</p>
+                </div>
+                <div>
+                    <ul style="text-align: justify;">
+                        <li>
+                            <span style="font-weight: 700;">-</span> Implement Supabase Auth to create a fully fledged
+                            social network experience.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Leverage SQL Relations between tables to create
+                            one-to-many and many-to-many relationships to serve the content of the app.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Proper use of client components, server actions,
+                            API
+                            Endpoints and Row Level Security to ensure the maximum safety for the end user.
+                        </li>
+                        <li>
+                            <span style="font-weight: 700;">-</span> Fast and interactive UI.
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <p class="negrita">Tech Stack:</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><span style="font-weight: 700;">-</span> NextJS (App Router), Tailwind CSS and Recharts</li>
+                        <li><span style="font-weight: 700;">-</span> Back End: NextJS, Supabase (PostgreSQL) and </li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <p class="negrit">Tags:</p>
+                </div>
+                <div>
+                    <ul class="project-tags-list">
+                        <li>#SSR, #CSR</li>
+                        <li>#RLS,</li>
+                        <li>#Forms,</li>
+                        <li>#SQLRelations,</li>
+                        <li>#Auth</li>
+                    </ul>
+                </div>
+                <br>
+                <hr>
+                <div class="project-footer">
+                    <a href="https://github.com/perepalacin/fullfoods" target="_blank" style="color: var(--body-bg);">
+                        <p>View site</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" width="16">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/perepalacin/fullfoods" target="_blank">
+                        <p>View code</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" width="16">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p>© 2024 Pere Palacín Pallàs - All Rights Reserved</p>
+    </footer>
+    <script type="text/javascript" src="js/theme-provider.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+</body>
+
+</html>
