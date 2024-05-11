@@ -390,8 +390,13 @@ main section h1, h2 {
     padding: 0rem 2rem;
 }
 
+.project-article div ul li {
+    text-align: justify;
+}
+
 .project-article p {
     font-size: 1.2rem; 
+    text-align: justify;
 }
 
 .project-article p span {
