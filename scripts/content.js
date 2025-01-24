@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const projectsContainer = document.querySelector('.projects-grid');
-
+    const projectsList = document.getElementById('projects-list');
     const projectsData = [
         {
             "title": "Finance Tracker",
@@ -220,23 +220,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function handleProjectClick(index) {
         const project = projectsData[index];
-
         const existingFloatingWindow = document.querySelector('.floating-window');
         if (existingFloatingWindow) {
             existingFloatingWindow.remove();
         }
-
+    
         const floatingWindow = document.createElement('div');
-        floatingWindow.classList.add('floating-window');
-
+        floatingWindow.className = 'floating-window';
+        document.body.appendChild(floatingWindow);
+    
+        projectsContainer.classList.add('collapsed');
+    
         const mediaContent = project.videoLink
             ? `<iframe src="${project.videoLink}" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
             : `<img src="${project.image || 'default-image-path.jpg'}" alt="${project.title}" style="width:100%; height:auto;">`;
-
-        const techStackContent = project.techStack.map((tech) => {
-                return (`<li>${tech},</li>`)
-            }).join("");
-            
+    
         floatingWindow.innerHTML = `
             <button id="close-floating-window" style="float: right;">&times;</button>
             <article>
@@ -255,11 +253,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 </section>
             </article>
         `;
-
-        document.body.appendChild(floatingWindow);
-
+    
         document.getElementById('close-floating-window').addEventListener('click', () => {
             floatingWindow.remove();
+            projectsContainer.classList.remove('collapsed');
+
         });
     }
 
@@ -306,6 +304,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const existingFloatingWindow = document.querySelector('.floating-window');
             if (existingFloatingWindow) {
                 existingFloatingWindow.remove();
+                projectsContainer.classList.remove('collapsed');
             }
         }
     });

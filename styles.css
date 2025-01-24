@@ -453,6 +453,7 @@ main section h1, h2 {
 
 .projects-grid {
     display: grid;
+    transition: width 0.3s ease, transform 0.3s ease;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1rem;
     margin-bottom: 8rem;
@@ -526,8 +527,7 @@ iframe {
     position: fixed;
     top: 1rem;
     width: 90%;
-    max-height: 90vh;
-    overflow-y: scroll;
+    height: 90vh;
     background-color: var(--body-bg);
     border: solid 1px var(--text-color);
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
@@ -536,19 +536,6 @@ iframe {
     z-index: 100;
 }
 
-@media (min-width: 768px) {
-    .floating-window {
-        width: 45%;
-        left: 50%
-    }
-}
-
-@media (min-width: 1024px) {
-    .floating-window {
-        width: 30%;
-        left: 68%;
-    }
-}
 
 .floating-window h2 {
     margin-top: 0;
@@ -568,6 +555,55 @@ iframe {
 .floating-window  ul {
     margin-left: 0;
     padding-left: 0.5rem;
+    /* list-style-type: none; */
+}
+
+#projects-list {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
+
+
+@media (min-width: 768px) {
+    .floating-window {
+        position: fixed;
+        right: 5%;
+        top: 10%;
+        min-width: 45%;
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .floating-window {
+        position: fixed;
+        min-width: 30%;
+        max-width: 30%;
+    }
+}
+
+.collapsed {
+    width: 100%;
+    padding-right: 1rem;
+    align-self: start;
+}
+
+@media (min-width: 768px) {
+    .collapsed {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 60%;
+        align-self: start;
+    }
+}
+
+@media (min-width: 1024px) {
+    .floating-window {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 70%;
+        align-self: start;
+    }
 }
 
 #close-floating-window {
