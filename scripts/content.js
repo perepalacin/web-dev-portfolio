@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectsData = [
         {
             "title": "Finance Tracker",
-            "videoLink": null,
+            "videoLink": "https://www.youtube.com/embed/8If4jhFIqis?si=NEXmt8bIdndJDau6",
             "description": "Finance Tracker built with Spring Boot (Java), SQL (Hibernate) and React (TypeScript).",
             "functionalities": [
                 "Allow users to track their income, expenses, investment and transfers accross different bank accounts.",
@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Auth"
             ],
             "links": {
-                "site": "https://github.com/perepalacin/fullfoods",
-                "code": "https://github.com/perepalacin/fullfoods"
+                "site": "https://github.com/perepalacin/finance-tracker",
+                "code": "https://github.com/perepalacin/finance-tracker"
             }
         },
         {
             "title": "Whatsapp FullStack Clone",
-            "videoLink": null,
+            "videoLink": "https://www.youtube.com/embed/UEOvp1GehT0?si=z85B3Bv7wSztkp8m",
             "description": "Full Stack clone of Whatsapp built with React and NodeJS.",
             "functionalities": [
                 "Send and receive  messages to/from other users in real time.",
@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Auth"
             ],
             "links": {
-                "site": "https://github.com/perepalacin/fullfoods",
-                "code": "https://github.com/perepalacin/fullfoods"
+                "site": "https://whatsapp-clone-by-pere-palacin.onrender.com/login",
+                "code": "https://github.com/perepalacin/fullstack-whatsapp-clone"
             }
         },
         {
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             "title": "Space Invaders",
-            "videoLink": null,
+            "videoLink": "https://www.youtube.com/embed/aOQYl_7D8A8?si=8LVptWxZdjJAz5PU",
             "description": "My own take at recreating the famous Space Invaders 2D Game in Java.",
             "functionalities": [
                 "Full game cycle logic implemented in Java and 2D Graphics managed by Java AWT.",
@@ -93,13 +93,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Auth"
             ],
             "links": {
-                "site": "https://github.com/perepalacin/fullfoods",
-                "code": "https://github.com/perepalacin/fullfoods"
+                "site": "https://github.com/perepalacin/space-invaders",
+                "code": "https://github.com/perepalacin/space-invaders"
             }
         },
         {
-            "title": "SOS - ETSEIB",
-            "videoLink": null,
+            "title": "WIP - SOS ETSEIB",
+            "videoLink": "https://www.youtube.com/embed/7BXdHiNw73k?si=hu1PyoSz49os3xVl",
             "description": "Open Source File System built with Java Servlets and HTMX for UPC students.",
             "functionalities": [
                 "Files repository open for UPC Students to share notes and exams between them.",
@@ -122,8 +122,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Java Template Engine"
             ],
             "links": {
-                "site": "https://github.com/perepalacin/fullfoods",
-                "code": "https://github.com/perepalacin/fullfoods"
+                "side": "https://github.com/perepalacin/sos-etseib",
+                "code": "https://github.com/perepalacin/sos-etseib"
             }
         },
         {
@@ -285,6 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <ul class="tech-stack-section">
                         ${techStackContent}
                         </ul>
+                        <p class="read-more-button">Read more!</p>
                         <hr>
                         <div class="project-footer">
                         <a href="${project.links.site}" target="_blank"><span>View site</span></a>

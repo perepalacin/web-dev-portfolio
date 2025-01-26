@@ -609,3 +609,12 @@ iframe {
 #close-floating-window {
     color: var(--text-color);
 }
+
+.read-more-button {
+    text-align: center;
+    cursor: pointer;
+}
+
+.read-more-button:hover {
+    text-decoration: underline;
+}
