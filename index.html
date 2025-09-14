@@ -20,18 +20,17 @@
         <div>
             <ul>
                 <li>
-                    <button class="nav-buttons" id="homeButton">Home</button>
+                    <a class="nav-buttons" id="homeButton">Home</a>
                 </li>
                 <li>
-                    <button class="nav-buttons" id="aboutButton">About me</button>
+                    <a class="nav-buttons" id="aboutButton">About me</a>
                 </li>
                 <li>
-                    <button class="nav-buttons" id="skillsButton">Skills</button>
+                    <a class="nav-buttons" id="skillsButton">Skills</a>
                 </li>
                 <li>
-                    <button class="nav-buttons" id="projectsButton">Projects</button>
+                    <a class="nav-buttons" id="projectsButton">Projects</a>
                 </li>
-            </ul>
             </ul>
             <button id="themeToggler" class="nav-buttons">
                 <img src="images/sun-icon.svg" alt="moon icon" id="sun">
@@ -63,20 +62,19 @@
             <div class="about-me-text">
                 <p><span>Greetings,</span>
                     <br>
-                    I am <span>Pere Palacín, a 26 y/o Industrial Engineer</span> from Barcelona and <span>Self-Taught Full
-                        Stack Developer</span> that is looking to quickstart his career in Tech as an
-                        <span>Junior</span> Full Stack or Backend Developer.
+                    I am <span>Pere Palacín, a <span id="years-old"></span> y/o Industrial Engineer</span> from Barcelona and <span>Self-Taught Full
+                        Stack Developer</span> that is looking to build a prosperous career in Tech as a
+                        Full Stack or Backend Developer.
                         <br>
                         <br>
                         After my first few professional experiences as an Engineer, I rediscovered my <span>passion for
                             programming</span> and Software in general. I would consider myself someone really <span>hungry for
-                                learning</span> and developing my own WebApps offers me exactly that in order to
+                                learning</span> and developing my own Software Tools offers me exactly that in order to
                                 <span>keep up with the everchanging tech landscape.</span>
                                 <br>
                                 <br>
                                 I coded for the first time in <span>middleschool using C++</span>, I then learned
-                                <span>Visual Basic in Highschool</span> and <span>Python at University.</span> During the last few
-                                months, I have been studying on my own <span>Java, JavaScript, React, ExpressJS, SQL and NoSQL</span>. This Website is a
+                                <span>Visual Basic in Highschool</span> and <span>Python at University.</span> During the last years, I have been studying on my own <span>Java, C, TypeScript, React, ExpressJS, SQL and NoSQL</span>. This Website is a
                                 collection of all the projects I've done so far using this technologies.
                                 <br>
                                 <br>
@@ -148,6 +146,10 @@
                         <img src="images/Typescript_logo_2020.svg" alt="TypeScript's Logo" width="48" loading="lazy">
                         <p>TypeScript</p>
                     </li>
+                    <li>
+                        <img src="images/C.svg" alt="C's Logo" width="48" loading="lazy">
+                        <p>C</p>
+                    </li>
                     <li class="muted-border">
                         <img src="images/Javascriptwhitejslogo.svg" alt="JavaScript's Logo" width="48" loading="lazy">
                         <p>JavaScript</p>
@@ -170,6 +172,10 @@
                     <li>
                         <img src="images/Node.js_logo.svg" alt="Node JS's Logo" width="74" loading="lazy">
                         <p>Node JS</p>
+                    </li>
+                    <li class="muted-border">
+                        <img src="images/nest.svg" alt="NestJS's Logo" width="48" loading="lazy">
+                        <p>Nest JS</p>
                     </li>
                     <li class="muted-border">
                         <img src="images/Javascriptwhitejslogo.svg" alt="JavaScript's Logo" width="48" loading="lazy">
@@ -271,21 +277,21 @@
                     </li>
                 </ul>
             </li>
-            <h4 style="padding-top: 2rem; text-align: center; font-size: 2rem;">+ I can read the docs!</h4>
             <!-- TODO: Deployment -->
         </ul>
+        <h4 style="padding-top: 2rem; text-align: center; font-size: 2rem;">+ I can read the docs!</h4>
     </section>
     <hr>
     <!-- Projects -->
     <section id="projects" class="core-section projects-section with-fadein-animation">
         <h2 class="section-title">PROJECTS</h2>
         <div id="projects-list">
-            <div class="projects-grid"></div>
+            <ul class="projects-grid"></ul>
         </div>
     </section>
     <hr>
     <footer>
-        <p>© 2025 Pere Palacín Pallàs - All Rights Reserved</p>
+        <p id="copyright-text">© 2025 Pere Palacín Pallàs - All Rights Reserved</p>
     </footer>
     <script type="text/javascript" src="scripts/theme-provider.js"></script>
     <script type="text/javascript" src="scripts/navbar.js"></script>
