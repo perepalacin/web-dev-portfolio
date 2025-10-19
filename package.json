@@ -1,0 +1,23 @@
+{
+  "name": "web-dev-portfolio",
+  "version": "1.0.0",
+  "description": "Web portfolio highlighting all my web dev related personal projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perepalacin/web-dev-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perepalacin/web-dev-portfolio/issues"
+  },
+  "homepage": "https://github.com/perepalacin/web-dev-portfolio#readme",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}

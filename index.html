@@ -26,6 +26,9 @@
                     <a class="nav-buttons" id="aboutButton">About me</a>
                 </li>
                 <li>
+                    <a class="nav-buttons" id="experienceButton">Resume</a>
+                </li>
+                <li>
                     <a class="nav-buttons" id="skillsButton">Skills</a>
                 </li>
                 <li>
@@ -46,8 +49,8 @@
             <h1 class="stretch-text-y section-title">FULLSTACK WEB</h1>
             <h2 class="stretch-text-y-2 section-title">DEV PORTFOLIO</h2>
             <p class="firm">by Pere Palacín</p>
-            <img class="hero-image" src="images/main.png"
-                alt="Black and white 2D ilustration of a guy with long hair wearing a hoodie" loading="lazy">
+            <!-- <img class="hero-image" src="images/main.png"
+                alt="Black and white 2D ilustration of a guy with long hair wearing a hoodie" loading="lazy"> -->
         </section>
     </main>
     <svg class="icon" height="24" width="24" style="padding-top: 2rem;" viewBox="0 0 407.437 407.437"
@@ -58,47 +61,64 @@
     <section id="about" class="core-section with-fadein-animation">
         <h2 class="section-title">ABOUT ME</h2>
         <div style="display: flex; justify-content: center;">
-
-            <div class="about-me-text">
-                <p><span>Greetings,</span>
-                    <br>
-                    I am <span>Pere Palacín, a <span id="years-old"></span> y/o Industrial Engineer</span> from Barcelona and <span>Self-Taught Full
-                        Stack Developer</span> that is looking to build a prosperous career in Tech as a
-                        Full Stack or Backend Developer.
-                        <br>
-                        <br>
-                        After my first few professional experiences as an Engineer, I rediscovered my <span>passion for
-                            programming</span> and Software in general. I would consider myself someone really <span>hungry for
-                                learning</span> and developing my own Software Tools offers me exactly that in order to
-                                <span>keep up with the everchanging tech landscape.</span>
-                                <br>
-                                <br>
-                                I coded for the first time in <span>middleschool using C++</span>, I then learned
-                                <span>Visual Basic in Highschool</span> and <span>Python at University.</span> During the last years, I have been studying on my own <span>Java, C, TypeScript, React, ExpressJS, SQL and NoSQL</span>. This Website is a
-                                collection of all the projects I've done so far using this technologies.
-                                <br>
-                                <br>
-                                <span>Please enjoy!</span>
-                            </p>
-                            <aside>
-                                <a href="https://github.com/perepalacin" target="_blank">
-                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" id="github" height="48"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                            <a href="https://www.linkedin.com/in/perepalacin/" target="_blank">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" id="linkedin" height="48"
+            <div class="panel about-me">
+                <h1 class="w-100 h1 align-self-left mb-1">Greetings,</h1>
+                <div class="about-me-text">
+                    <p>
+                        I am <span>Pere Palacín, a <span id="years-old"></span> years old Software Engineer</span> from Barcelona mostly <span
+                            >Self-Taught</span
+                        > with a great interest in developping data intensive applications (Full Stack or Backend mainly).
+                        <br />
+                        <br />
+                        After my first few professional experiences as an Engineer, I rediscovered my <span>passion for programming</span> and Software
+                        in general. I would consider myself someone really <span>hungry for learning</span> and developing my own Software Tools
+                        offers me exactly that in order to
+                        <span>keep up with the everchanging tech landscape.</span>
+                        I particularly enjoy <span>diving deep into performance optimization</span>, trying to squeeze every bit of efficiency
+                        out of the system<span> by understanding how frameworks work under the hood</span> while maintaining <span
+                            >clean, testable, robust, and well-structured code.</span
+                        >
+                        <br />
+                        <br />
+                        I coded for the first time in <span>middleschool using C</span>, I then learned
+                        <span>Visual Basic in Highschool</span> and <span>Python at University.</span> During the last years, I have been studying
+                        on my own <span
+                            >Java, C and TypeScript. As well as other technologies and frameworks such as React, ExpressJS, Spring, SQL and
+                            NoSQL</span
+                        >. This Website is a record of my career as well as a collection of all the projects I've done so far using this
+                        technologies.
+                        <br />
+                        <br />
+                        <span>Please enjoy!</span>
+                    </p>
+                        <aside>
+                            <a href="https://github.com/perepalacin" target="_blank">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" id="github" height="48"
                                 viewBox="0 0 24 24">
                                 <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                             </svg>
-                        </aside>
-                        
-                    </a>
-                </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/perepalacin/" target="_blank">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" id="linkedin" height="48"
+                            viewBox="0 0 24 24">
+                            <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        </a>
+                        <a href="mailto:perepalacin@email.com">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" id="mail" height="48" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                        </a>
+                    </aside>
             </div>
+            </div>
+
+    </section>
+    <hr>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="core-section with-fadein-animation">
+        <h2 class="section-title">RESUME</h2>
+        <div id="career-viewer-root" class="career-viewer"></div>
     </section>
     <hr>
     <!-- Skills -->
@@ -139,23 +159,23 @@
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/Java_Logo.svg" alt="Java's Logo" width="28" loading="lazy">
+                        <img src="images/java.svg" alt="Java's Logo" width="28" loading="lazy">
                         <p>Java</p>
                     </li>
                     <li>
-                        <img src="images/Typescript_logo_2020.svg" alt="TypeScript's Logo" width="48" loading="lazy">
+                        <img src="images/typescript.svg" alt="TypeScript's Logo" width="48" loading="lazy">
                         <p>TypeScript</p>
                     </li>
                     <li>
-                        <img src="images/C.svg" alt="C's Logo" width="48" loading="lazy">
+                        <img src="images/c.svg" alt="C's Logo" width="48" loading="lazy">
                         <p>C</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/Javascriptwhitejslogo.svg" alt="JavaScript's Logo" width="48" loading="lazy">
+                        <img src="images/js.svg" alt="JavaScript's Logo" width="48" loading="lazy">
                         <p>JavaScript</p>
                     </li>
                     <li>
-                        <img src="images/Python-logo-notext.svg" alt="Python's Logo" width="48" loading="lazy">
+                        <img src="images/python.svg" alt="Python's Logo" width="48" loading="lazy">
                         <p>Python</p>
                     </li>
                 </ul>
@@ -166,11 +186,11 @@
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/Spring_Boot.svg" alt="Spring Boot's Logo" width="48" loading="lazy">
+                        <img src="images/springboot.svg" alt="Spring Boot's Logo" width="48" loading="lazy">
                         <p>Spring Boot</p>
                     </li>
                     <li>
-                        <img src="images/Node.js_logo.svg" alt="Node JS's Logo" width="74" loading="lazy">
+                        <img src="images/nodejs.svg" alt="Node JS's Logo" width="74" loading="lazy">
                         <p>Node JS</p>
                     </li>
                     <li class="muted-border">
@@ -178,15 +198,15 @@
                         <p>Nest JS</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/Javascriptwhitejslogo.svg" alt="JavaScript's Logo" width="48" loading="lazy">
+                        <img src="images/js.svg" alt="JavaScript's Logo" width="48" loading="lazy">
                         <p>Express JS</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/firebase-svgrepo-com.svg" alt="Firebase's Logo" width="48" loading="lazy">
+                        <img src="images/firebase.svg" alt="Firebase's Logo" width="48" loading="lazy">
                         <p>FireStore</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/nextjs-2.svg" alt="NextJS's Logo" width="48" loading="lazy">
+                        <img src="images/nextjs.svg" alt="NextJS's Logo" width="48" loading="lazy">
                         <p>NextJS</p>
                     </li>
                 </ul>
@@ -197,20 +217,39 @@
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/HTML5_Badge.svg" alt="HTML5's Logo" width="48" loading="lazy">
+                        <img src="images/html.svg" alt="HTML5's Logo" width="48" loading="lazy">
                         <p>HTML 5</p>
                     </li>
                     <li>
-                        <img src="images/Javascriptwhitejslogo.svg" alt="JavaScript's Logo" width="48" loading="lazy">
+                        <img src="images/js.svg" alt="JavaScript's Logo" width="48" loading="lazy">
                         <p>Vanilla JS</p>
                     </li>
                     <li>
-                        <img src="images/React-icon.svg" alt="ReactJS's Logo" width="48" loading="lazy">
+                        <img src="images/react.svg" alt="ReactJS's Logo" width="48" loading="lazy">
                         <p>React</p>
                     </li>
                     <li>
-                        <img src="images/htmxlogo.svg" alt="HTMX's Logo" width="128" loading="lazy">
+                        <img src="images/htmx.svg" alt="HTMX's Logo" width="128" loading="lazy">
                         <p>HTMX</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="with-fadein-animation">
+                <h3>
+                    Deploying
+                </h3>
+                <ul>
+                    <li>
+                        <img src="images/aws.svg" alt="AWS's Logo" width="48" loading="lazy">
+                        <p>AWS</p>
+                    </li>
+                    <li>
+                        <img src="images/docker.svg" alt="Docker's Logo" width="48" loading="lazy">
+                        <p>Docker</p>
+                    </li>
+                    <li>
+                        <img src="images/github.svg" alt="Github's Logo" width="48" loading="lazy">
+                        <p>Github Actions</p>
                     </li>
                 </ul>
             </li>
@@ -220,15 +259,15 @@
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/Sql_data_base_with_logo.svg" alt="SQL's Logo" width="100" loading="lazy">
+                        <img src="images/sql.svg" alt="SQL's Logo" width="100" loading="lazy">
                         <p>SQL</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/Postgresql_elephant.svg" alt="PostgreSQL's Logo" width="48" loading="lazy">
+                        <img src="images/postgres.svg" alt="PostgreSQL's Logo" width="48" loading="lazy">
                         <p>PostgreSQL</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/MySQL.svg" alt="MySQL's Logo" width="84" loading="lazy">
+                        <img src="images/mysql.svg" alt="MySQL's Logo" width="84" loading="lazy">
                         <p>MySQL</p>
                     </li>
                     <li>
@@ -236,11 +275,11 @@
                         <p>NoSQL</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/mongodb-svgrepo-com.svg" alt="MongoDB's Logo" width="48" loading="lazy">
+                        <img src="images/mongodb.svg" alt="MongoDB's Logo" width="48" loading="lazy">
                         <p>MongoDB</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/firebase-svgrepo-com.svg" alt="Firebase's Logo" width="48" loading="lazy">
+                        <img src="images/firebase.svg" alt="Firebase's Logo" width="48" loading="lazy">
                         <p>Firebase</p>
                     </li>
                 </ul>
@@ -251,33 +290,32 @@
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/CSS3_logo.svg" alt="CSS 3's Logo" width="48" loading="lazy">
+                        <img src="images/css.svg" alt="CSS 3's Logo" width="48" loading="lazy">
                         <p>CSS 3</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/Tailwind_CSS_Logo.svg" alt="Tailwind CSS's Logo" width="48" loading="lazy">
+                        <img src="images/tailwind.svg" alt="Tailwind CSS's Logo" width="48" loading="lazy">
                         <p>Tailwind CSS</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/Bootstrap_logo.svg" alt="Bootstrap's Logo" width="86" loading="lazy">
+                        <img src="images/bootstrap.svg" alt="Bootstrap's Logo" width="86" loading="lazy">
                         <p>Bootstrap</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/shadcn-ui-logo-EF735EC0E5-seeklogo.com.png" alt="Shadcn-ui's Logo" width="36"
+                        <img src="images/shadcn.png" alt="Shadcn-ui's Logo" width="36"
                             loading="lazy">
                         <p>Shadcn-ui</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/material-ui-1.svg" alt="Material-UI's Logo" width="48" loading="lazy">
+                        <img src="images/materialui.svg" alt="Material-UI's Logo" width="48" loading="lazy">
                         <p>Material-UI</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/daisyui-logotype.svg" alt="daisyUI's Logo" width="120" loading="lazy">
+                        <img src="images/daisyui.svg" alt="daisyUI's Logo" width="120" loading="lazy">
                         <p>daisyUI</p>
                     </li>
                 </ul>
             </li>
-            <!-- TODO: Deployment -->
         </ul>
         <h4 style="padding-top: 2rem; text-align: center; font-size: 2rem;">+ I can read the docs!</h4>
     </section>
@@ -297,6 +335,7 @@
     <script type="text/javascript" src="scripts/navbar.js"></script>
     <script type="text/javascript" src="scripts/timeline.js"></script>
     <script type="text/javascript" src="scripts/content.js"></script>
+    <script type="text/javascript" src="scripts/careerViewer.js"></script>
 </body>
 
 </html>
