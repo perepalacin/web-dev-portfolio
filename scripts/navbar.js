@@ -4,12 +4,14 @@ const about = document.getElementById("about");
 const experience = document.getElementById("experience");
 const skills = document.getElementById("skills");
 const projects = document.getElementById("projects");
+// const highlighted = document.getElementById("highlighted");
 
 const homeButton = document.getElementById("homeButton");
 const aboutButton = document.getElementById("aboutButton");
 const experienceButton = document.getElementById("experienceButton");
 const skillsButton = document.getElementById("skillsButton");
 const projectsButton = document.getElementById("projectsButton");
+// const highlightedButton = document.getElementById("highlightedButton");
 
 homeButton.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -36,9 +38,13 @@ projectsButton.addEventListener("click",(e)=>{
     projects.scrollIntoView({block: 'start', behavior: 'smooth'});
 });
 
+// highlightedButton.addEventListener("click",(e)=>{
+//     e.preventDefault();
+//     highlighted.scrollIntoView({block: 'start', behavior: 'smooth'});
+// });
 
 window.addEventListener('scroll', navbarHighlight, {passive: true} );
-
+let elementsArray = document.getElementsByClassName("with-fadein-animation");
 function navbarHighlight() {
     for (let i = 0; i < elementsArray.length; i++) {
         var elem = elementsArray[i]
@@ -51,6 +57,7 @@ function navbarHighlight() {
                     skillsButton.classList.remove('highlighted-button');
                     experienceButton.classList.remove('highlighted-button');
                     projectsButton.classList.remove('highlighted-button');
+                    // highlightedButton.classList.remove('highlighted-button');
                     break;
                 case ("skills"):
                     skillsButton.classList.add('highlighted-button');
@@ -58,6 +65,7 @@ function navbarHighlight() {
                     homeButton.classList.remove('highlighted-button');
                     projectsButton.classList.remove('highlighted-button');
                     experienceButton.classList.remove('highlighted-button');
+                    // highlightedButton.classList.remove('highlighted-button');
                     break;
                 case ("projects"):
                     projectsButton.classList.add('highlighted-button');
@@ -65,9 +73,19 @@ function navbarHighlight() {
                     aboutButton.classList.remove('highlighted-button');
                     homeButton.classList.remove('highlighted-button');
                     experienceButton.classList.remove('highlighted-button');
+                    // highlightedButton.classList.remove('highlighted-button');
                     break;
                 case ("experience"):
                     experienceButton.classList.add('highlighted-button');
+                    skillsButton.classList.remove('highlighted-button');
+                    aboutButton.classList.remove('highlighted-button');
+                    homeButton.classList.remove('highlighted-button');
+                    projectsButton.classList.remove('highlighted-button');
+                    // highlightedButton.classList.remove('highlighted-button');
+                    break;
+                case ("highlighted"):
+                    // highlightedButton.classList.add('highlighted-button');
+                    experienceButton.classList.remove('highlighted-button');
                     skillsButton.classList.remove('highlighted-button');
                     aboutButton.classList.remove('highlighted-button');
                     homeButton.classList.remove('highlighted-button');
@@ -76,6 +94,7 @@ function navbarHighlight() {
             }
             if(window.scrollY < 500) {
                 homeButton.classList.add('highlighted-button');
+                // highlightedButton.classList.remove('highlighted-button');
                 projectsButton.classList.remove('highlighted-button');
                 skillsButton.classList.remove('highlighted-button');
                 experienceButton.classList.remove('highlighted-button');
@@ -92,4 +111,5 @@ if(window.scrollY==0) {
     experienceButton.classList.remove('highlighted-button');
     skillsButton.classList.remove('highlighted-button');
     aboutButton.classList.remove('highlighted-button');
+    // highlightedButton.classList.remove('highlighted-button');
 }

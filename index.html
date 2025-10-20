@@ -12,7 +12,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script type="text/javascript" src="scripts/scrolls.js"></script>
 </head>
 
 <body>
@@ -31,14 +30,17 @@
                 <li>
                     <a class="nav-buttons" id="skillsButton">Skills</a>
                 </li>
+                <!-- <li>
+                    <a class="nav-buttons" id="highlightedButton">Highlighted</a>
+                </li> -->
                 <li>
-                    <a class="nav-buttons" id="projectsButton">Projects</a>
+                    <a class="nav-buttons" id="projectsButton">All Projects</a>
                 </li>
             </ul>
             <button id="themeToggler" class="nav-buttons">
-                <img src="images/sun-icon.svg" alt="moon icon" id="sun">
-                <img src="images/moon-icon.svg" alt="moon icon" id="moon">
-                <p id="toggleLabel">Light mode</p>
+                <img src="images/sun-icon.svg" width="14" height="19" alt="moon icon" id="sun">
+                <img src="images/moon-icon.svg" width="14" height="19" alt="moon icon" id="moon">
+                <!-- <p id="toggleLabel">Light mode</p> -->
             </button>
         </div>
     </nav>
@@ -64,33 +66,42 @@
             <div class="panel about-me">
                 <h1 class="w-100 h1 align-self-left mb-1">Greetings,</h1>
                 <div class="about-me-text">
-                    <p>
-                        I am <span>Pere Palacín, a <span id="years-old"></span> years old Software Engineer</span> from Barcelona mostly <span
+                    <div>
+
+                        <p class=" with-fadein-animation">
+                            I am <span>Pere Palacín, a <span id="years-old"></span> years old Software Engineer</span> from Barcelona mostly <span
                             >Self-Taught</span
-                        > with a great interest in developping data intensive applications (Full Stack or Backend mainly).
+                            > with a great interest in developping data intensive applications (Full Stack or Backend mainly).
+                        </p>
                         <br />
-                        <br />
-                        After my first few professional experiences as an Engineer, I rediscovered my <span>passion for programming</span> and Software
-                        in general. I would consider myself someone really <span>hungry for learning</span> and developing my own Software Tools
-                        offers me exactly that in order to
-                        <span>keep up with the everchanging tech landscape.</span>
-                        I particularly enjoy <span>diving deep into performance optimization</span>, trying to squeeze every bit of efficiency
-                        out of the system<span> by understanding how frameworks work under the hood</span> while maintaining <span
+                        <p class=" with-fadein-animation">
+                            
+                            After my first few professional experiences as an Engineer, I rediscovered my <span>passion for programming</span> and Software
+                            in general. I would consider myself someone really <span>hungry for learning</span> and developing my own Software Tools
+                            offers me exactly that in order to
+                            <span>keep up with the everchanging tech landscape.</span>
+                            I particularly enjoy <span>diving deep into performance optimization</span>, trying to squeeze every bit of efficiency
+                            out of the system<span> by understanding how frameworks work under the hood</span> while maintaining <span
                             >clean, testable, robust, and well-structured code.</span
-                        >
+                            >
+                        </p>
                         <br />
-                        <br />
-                        I coded for the first time in <span>middleschool using C</span>, I then learned
-                        <span>Visual Basic in Highschool</span> and <span>Python at University.</span> During the last years, I have been studying
-                        on my own <span
+                        <p class=" with-fadein-animation">
+                            
+                            I coded for the first time in <span>middleschool using C</span>, I then learned
+                            <span>Visual Basic in Highschool</span> and <span>Python at University.</span> During the last years, I have been studying
+                            on my own <span
                             >Java, C and TypeScript. As well as other technologies and frameworks such as React, ExpressJS, Spring, SQL and
                             NoSQL</span
-                        >. This Website is a record of my career as well as a collection of all the projects I've done so far using this
-                        technologies.
+                            >. This Website is a record of my career as well as a collection of all the projects I've done so far using this
+                            technologies.
+                        </p>
                         <br />
                         <br />
-                        <span>Please enjoy!</span>
-                    </p>
+                        <p>
+                            <span  class="with-fadein-animation">Please enjoy!</span>
+                        </p>
+                    </div>
                         <aside>
                             <a href="https://github.com/perepalacin" target="_blank">
                                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" id="github" height="48"
@@ -126,106 +137,106 @@
         <h2 class="section-title">SKILLS</h2>
         <ul class="skills-list">
             <li class="with-fadein-animation">
-                <h3>
+                <h3 class="mb-2">
                     Natural languages
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/Flag_of_Spain.svg" alt="Flag of Spain" width="48" loading="lazy">
+                        <img src="./images/Flag_of_Spain.svg" alt="Flag of Spain" width="48" loading="lazy">
                         <p>Spanish</p>
                         <span>(Native)</span>
                     </li>
                     <li>
-                        <img src="images/Flag_of_Catalonia.svg" alt="Flag of Catalonia" width="48" loading="lazy">
+                        <img src="./images/Flag_of_Catalonia.svg" alt="Flag of Catalonia" width="48" loading="lazy">
                         <p>Catalan</p>
                         <span>(Native)</span>
                     </li>
                     <li>
-                        <img src="images/Flag_of_the_United_Kingdom.svg" alt="Flag of the United Kingdom" width="48"
+                        <img src="./images/Flag_of_the_United_Kingdom.svg" alt="Flag of the United Kingdom" width="48"
                             loading="lazy">
                         <p>English</p>
                         <span>(Professional - C1)</span>
                     </li>
                     <li>
-                        <img src="images/Flag_of_France.svg" alt="Flag of France" width="48" loading="lazy">
+                        <img src="./images/Flag_of_France.svg" alt="Flag of France" width="48" loading="lazy">
                         <p>French</p>
                         <span>(Conversational - B2)</span>
                     </li>
                 </ul>
             </li>
             <li class="with-fadein-animation">
-                <h3>
+                <h3 class="mt-2 mb-2">
                     Programming Lenguages
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/java.svg" alt="Java's Logo" width="28" loading="lazy">
+                        <img src="./images/java.svg" alt="Java's Logo" width="28" loading="lazy">
                         <p>Java</p>
                     </li>
                     <li>
-                        <img src="images/typescript.svg" alt="TypeScript's Logo" width="48" loading="lazy">
+                        <img src="./images/typescript.svg" alt="TypeScript's Logo" width="48" loading="lazy">
                         <p>TypeScript</p>
                     </li>
                     <li>
-                        <img src="images/c.svg" alt="C's Logo" width="48" loading="lazy">
+                        <img src="./images/c.svg" alt="C's Logo" width="48" loading="lazy">
                         <p>C</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/js.svg" alt="JavaScript's Logo" width="48" loading="lazy">
+                        <img src="./images/js.svg" alt="JavaScript's Logo" width="48" loading="lazy">
                         <p>JavaScript</p>
                     </li>
                     <li>
-                        <img src="images/python.svg" alt="Python's Logo" width="48" loading="lazy">
+                        <img src="./images/python.svg" alt="Python's Logo" width="48" loading="lazy">
                         <p>Python</p>
                     </li>
                 </ul>
             </li>
             <li class="with-fadein-animation">
-                <h3>
+                <h3 class="mt-2 mb-2">
                     Back End
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/springboot.svg" alt="Spring Boot's Logo" width="48" loading="lazy">
+                        <img src="./images/springboot.svg" alt="Spring Boot's Logo" width="48" loading="lazy">
                         <p>Spring Boot</p>
                     </li>
                     <li>
-                        <img src="images/nodejs.svg" alt="Node JS's Logo" width="74" loading="lazy">
+                        <img src="./images/nodejs.svg" alt="Node JS's Logo" width="74" loading="lazy">
                         <p>Node JS</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/nest.svg" alt="NestJS's Logo" width="48" loading="lazy">
+                        <img src="./images/nest.svg" alt="NestJS's Logo" width="48" loading="lazy">
                         <p>Nest JS</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/js.svg" alt="JavaScript's Logo" width="48" loading="lazy">
+                        <img src="./images/js.svg" alt="JavaScript's Logo" width="48" loading="lazy">
                         <p>Express JS</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/firebase.svg" alt="Firebase's Logo" width="48" loading="lazy">
+                        <img src="./images/firebase.svg" alt="Firebase's Logo" width="48" loading="lazy">
                         <p>FireStore</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/nextjs.svg" alt="NextJS's Logo" width="48" loading="lazy">
+                        <img src="./images/nextjs.svg" alt="NextJS's Logo" width="48" loading="lazy">
                         <p>NextJS</p>
                     </li>
                 </ul>
             </li>
             <li class="with-fadein-animation">
-                <h3>
+                <h3 class="mt-2 mb-2">
                     Front End
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/html.svg" alt="HTML5's Logo" width="48" loading="lazy">
+                        <img src="./images/html.svg" alt="HTML5's Logo" width="48" loading="lazy">
                         <p>HTML 5</p>
                     </li>
                     <li>
-                        <img src="images/js.svg" alt="JavaScript's Logo" width="48" loading="lazy">
+                        <img src="./images/js.svg" alt="JavaScript's Logo" width="48" loading="lazy">
                         <p>Vanilla JS</p>
                     </li>
                     <li>
-                        <img src="images/react.svg" alt="ReactJS's Logo" width="48" loading="lazy">
+                        <img src="./images/react.svg" alt="ReactJS's Logo" width="48" loading="lazy">
                         <p>React</p>
                     </li>
                     <li>
@@ -235,83 +246,87 @@
                 </ul>
             </li>
             <li class="with-fadein-animation">
-                <h3>
+                <h3 class="mt-2 mb-2">
                     Deploying
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/aws.svg" alt="AWS's Logo" width="48" loading="lazy">
+                        <img src="./images/aws.svg" alt="AWS's Logo" width="48" loading="lazy">
                         <p>AWS</p>
                     </li>
                     <li>
-                        <img src="images/docker.svg" alt="Docker's Logo" width="48" loading="lazy">
+                        <img src="./images/docker.svg" alt="Docker's Logo" width="48" loading="lazy">
                         <p>Docker</p>
                     </li>
                     <li>
-                        <img src="images/github.svg" alt="Github's Logo" width="48" loading="lazy">
+                        <img src="./images/github.svg" alt="Github's Logo" width="48" loading="lazy">
                         <p>Github Actions</p>
+                    </li>
+                    <li>
+                        <img src="./images/cloudflare.png" alt="cloudflare's Logo" width="48" loading="lazy">
+                        <p>cloudflare</p>
                     </li>
                 </ul>
             </li>
             <li class="with-fadein-animation">
-                <h3>
+                <h3 class="mt-2 mb-2">
                     Database Management
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/sql.svg" alt="SQL's Logo" width="100" loading="lazy">
+                        <img src="./images/sql.svg" alt="SQL's Logo" width="100" loading="lazy">
                         <p>SQL</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/postgres.svg" alt="PostgreSQL's Logo" width="48" loading="lazy">
+                        <img src="./images/postgres.svg" alt="PostgreSQL's Logo" width="48" loading="lazy">
                         <p>PostgreSQL</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/mysql.svg" alt="MySQL's Logo" width="84" loading="lazy">
+                        <img src="./images/mysql.svg" alt="MySQL's Logo" width="84" loading="lazy">
                         <p>MySQL</p>
                     </li>
                     <li>
-                        <img src="images/nosql.svg" alt="NoSQL Logo" width="48" loading="lazy">
+                        <img src="./images/nosql.svg" alt="NoSQL Logo" width="48" loading="lazy">
                         <p>NoSQL</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/mongodb.svg" alt="MongoDB's Logo" width="48" loading="lazy">
+                        <img src="./images/mongodb.svg" alt="MongoDB's Logo" width="48" loading="lazy">
                         <p>MongoDB</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/firebase.svg" alt="Firebase's Logo" width="48" loading="lazy">
+                        <img src="./images/firebase.svg" alt="Firebase's Logo" width="48" loading="lazy">
                         <p>Firebase</p>
                     </li>
                 </ul>
             </li>
             <li class="with-fadein-animation">
-                <h3>
+                <h3 class="mt-2 mb-2">
                     Styling
                 </h3>
                 <ul>
                     <li>
-                        <img src="images/css.svg" alt="CSS 3's Logo" width="48" loading="lazy">
+                        <img src="./images/css.svg" alt="CSS 3's Logo" width="48" loading="lazy">
                         <p>CSS 3</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/tailwind.svg" alt="Tailwind CSS's Logo" width="48" loading="lazy">
+                        <img src="./images/tailwind.svg" alt="Tailwind CSS's Logo" width="48" loading="lazy">
                         <p>Tailwind CSS</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/bootstrap.svg" alt="Bootstrap's Logo" width="86" loading="lazy">
+                        <img src="./images/bootstrap.svg" alt="Bootstrap's Logo" width="86" loading="lazy">
                         <p>Bootstrap</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/shadcn.png" alt="Shadcn-ui's Logo" width="36"
+                        <img src="./images/shadcn.png" alt="Shadcn-ui's Logo" width="36"
                             loading="lazy">
                         <p>Shadcn-ui</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/materialui.svg" alt="Material-UI's Logo" width="48" loading="lazy">
+                        <img src="./images/materialui.svg" alt="Material-UI's Logo" width="48" loading="lazy">
                         <p>Material-UI</p>
                     </li>
                     <li class="muted-border">
-                        <img src="images/daisyui.svg" alt="daisyUI's Logo" width="120" loading="lazy">
+                        <img src="./images/daisyui.svg" alt="daisyUI's Logo" width="120" loading="lazy">
                         <p>daisyUI</p>
                     </li>
                 </ul>
@@ -320,9 +335,28 @@
         <h4 style="padding-top: 2rem; text-align: center; font-size: 2rem;">+ I can read the docs!</h4>
     </section>
     <hr>
-    <!-- Projects -->
-    <section id="projects" class="core-section projects-section with-fadein-animation">
-        <h2 class="section-title">PROJECTS</h2>
+    <!-- HIGHLIGHTED -->
+    <!-- <section id="highlighted" class="core-section highlighted-section with-fadein-animation">
+        <h2 class="section-title">HIGHLIGHTED</h2>
+    </section> -->
+    <hr>
+    <!-- ALL Projects -->
+    <section id="projects" class="core-section projects-section with-fadein-animation mb-4">
+        <h2 class="section-title">ALL PROJECTS</h2>
+        <div class="filter-bar">
+            <div class="filter-box">
+                <button id="filter-toggle">
+                    Filter by Technologies
+                </button>
+                
+                <div id="filter-menu" class="filter-menu" aria-hidden="true" role="menu">
+                </div>
+            </div>
+        </div>
+        <div id="results-bar" class="results-bar">
+            <h3 id="show-results-label" style="display: none;">Showing results for:</h3>
+            <div id="filter-chips"></div>
+        </div>
         <div id="projects-list">
             <ul class="projects-grid"></ul>
         </div>
@@ -331,11 +365,13 @@
     <footer>
         <p id="copyright-text">© 2025 Pere Palacín Pallàs - All Rights Reserved</p>
     </footer>
-    <script type="text/javascript" src="scripts/theme-provider.js"></script>
-    <script type="text/javascript" src="scripts/navbar.js"></script>
-    <script type="text/javascript" src="scripts/timeline.js"></script>
-    <script type="text/javascript" src="scripts/content.js"></script>
-    <script type="text/javascript" src="scripts/careerViewer.js"></script>
+    <script src="scripts/theme-provider.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/timeline.js"></script>
+    <script src="scripts/projects.js" type="module"></script>
+    <script src="scripts/careerViewer.js" type="module"></script>
+    <script src="./scripts/scrolls.js" type="module"></script>
+    <script src="./scripts/filter-menu.js" type="module"></script>
 </body>
 
 </html>

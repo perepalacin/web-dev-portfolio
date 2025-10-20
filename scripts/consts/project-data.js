@@ -1,7 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const projectsContainer = document.querySelector(".projects-grid");
-  const projectsList = document.getElementById("projects-list");
-  const projectsData = [
+export const projectsData = [
     {
       title: "Finance Tracker",
       videoLink:
@@ -15,13 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "A lot of effort was put in the Endpoint design to ensure a testable and maintainable code.",
       ],
       techStack: [
-        "Java",
-        "Springboot",
-        "React",
-        "TypeScript",
-        "SQL",
-        "Hibernate",
-        "Recharts",
+        "java",
+        "springboot",
+        "react",
+        "typescript",
+        "postgres",
+        "hibernate",
       ],
       tags: [
         "SpringSecurity",
@@ -48,12 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "Authentication of users based on JWT tokens without any external library.",
       ],
       techStack: [
-        "React",
-        "NodeJs",
-        "TypeScript",
-        "PostgreSQL",
-        "Socket.io",
-        "CSS",
+        "react",
+        "nodejs",
+        "typescript",
+        "postgres",
+        "sockets",
+        "css",
       ],
       tags: ["Auth", "Sockets", "ExpressJS", "SQLRelations", "Auth"],
       links: {
@@ -72,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Server Side home page and individual quote page to search for quotes based on its contents, author name, topics even from your search engine.",
         "Leveraged Tailwind CSS and ShadCN components to craft an appealing and responsive UI.",
       ],
-      techStack: ["React", "NextJS", "TypeScript", "TailwindCSS", "MongoDB"],
+      techStack: ["react", "nextjs", "typescript", "tailwindcss", "mongodb"],
       tags: [
         "ExpressJS",
         "NodeJS",
@@ -97,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Full game cycle logic implemented in Java and 2D Graphics managed by Java AWT.",
         "Best practices to Leverage the power of OOP to reduce the amount of code written.",
       ],
-      techStack: ["Java", "Maven", "Java AWT"],
+      techStack: ["java", "maven", "javaawt"],
       tags: [
         "OOP",
         "Object Oriented Programming",
@@ -126,12 +122,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "Fully Server Side Rendered frontend using Java Template Engine (JTE) and HTMX, which resulted in a very small Frontend codebase.",
       ],
       techStack: [
-        "React",
-        "NodeJs",
-        "TypeScript",
-        "PostgreSQL",
-        "Socket.io",
-        "CSS",
+        "react",
+        "nodejs",
+        "typescript",
+          "postgres",
+        "cloudflare",
+        "css",
+        "htmx"
       ],
       tags: [
         "SSR",
@@ -163,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Creation of an appealing Neobrutalism UI theme using plain CSS.",
         "Users' authentication is managed using Firebase Anonymous Sessions.",
       ],
-      techStack: ["React", "Vite", "React Router", "CSS", "Firebase"],
+      techStack: ["react", "vite", "css", "firebase"],
       tags: ["Auth", "RealtimeApp", "Firebase", "Deployed", "SessionManaging"],
       links: {
         site: "https://github.com/perepalacin/the-mind-online-game",
@@ -183,11 +180,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "Fast and interactive UI.",
       ],
       techStack: [
-        "NextJS",
-        "TailwindCSS",
-        "Recharts",
-        "Supabase",
-        "PostgreSQL",
+        "nextjs",
+        "tailwindcss",
+        "supabase",
+        "postgres",
       ],
       tags: ["SSR", "CSR", "RLS", "Forms", "SQLRelations", "Auth"],
       links: {
@@ -206,150 +202,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "Fast and enjoyable user experience with the use of React Router v6 for navigation.",
         "Creation of an appealing UI using plain CSS only for high readability and maintainability of the code.",
       ],
-      techStack: ["React", "TypeScript", "Vite", "React Router", "CSS"],
+      techStack: ["react", "typescript", "vite", "css"],
       tags: ["ERP", "Client Side Validation", "Front End", "CSS"],
       links: {
         site: "https://github.com/perepalacin/factorial-clone-app",
         code: "https://github.com/perepalacin/factorial-clone-app",
       },
     },
-    {
-      title: "WIP - Factorial Clone Back End",
-      image: "images/intro.png",
-      description:
-        "A Back End clone of the ERP Software Factorial HR using Node Js with Express JS and NeonDB (PostgreSQL). This project goes hand in hand with the Front End Factorial clone project as this serves the content to the front end.",
-      functionalities: [
-        "Build API endpoints to serve content from the PostgreSQL DB to the front end.",
-        "Server side validation of all the POST and PATCH requests created by the client.",
-        "Implementation of the Build Version of the React Front End inside the Back End repo.",
-        "Learnt how to deploy webapps with Render.io.",
-      ],
-      techStack: ["TypeScript", "NodeJS", "ExpressJS", "PostgreSQL"],
-      tags: ["HTTPS", "ErrorHandling", "Deployment"],
-      links: {
-        site: "https://github.com/perepalacin/factorial-clone-app-backend",
-        code: "https://github.com/perepalacin/factorial-clone-app-backend",
-      },
-    },
   ];
-
-  function handleProjectClick(index) {
-    const project = projectsData[index];
-    const existingFloatingWindow = document.querySelector(".floating-window");
-    if (existingFloatingWindow) {
-      existingFloatingWindow.remove();
-    }
-
-    const floatingWindow = document.createElement("div");
-    floatingWindow.className = "floating-window";
-    document.body.appendChild(floatingWindow);
-
-    projectsContainer.classList.add("collapsed");
-
-    const mediaContent = project.videoLink
-      ? `<iframe src="${project.videoLink}" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-      : `<img src="${project.image || "default-image-path.jpg"}" alt="${
-          project.title
-        }" style="width:100%; height:auto;">`;
-
-    floatingWindow.innerHTML = `
-            <button id="close-floating-window" style="float: right;">&times;</button>
-            <article>
-                <section>
-                    ${mediaContent}
-                </section>
-                <section class="project-click">                        
-                    <h4>${project.title}</h4>
-                    <br>
-                    <div><p>${project.description}</p></div>
-                    <br>
-                    <div><p class="negrita">Key functionalities:</p></div>
-                    <div class"hidden"><ul>${project.functionalities
-                      .map((f) => `<li>${f}</li>`)
-                      .join("")}</ul></div>
-                    <div><p class="negrita">Tech Stack:</p></div>
-                    <div><ul>${project.techStack
-                      .map((t) => `<li>${t}</li>`)
-                      .join("")}</ul></div>
-                </section>
-            </article>
-        `;
-
-    document
-      .getElementById("close-floating-window")
-      .addEventListener("click", () => {
-        floatingWindow.remove();
-        projectsContainer.classList.remove("collapsed");
-      });
-  }
-
-  projectsContainer.innerHTML = "";
-
-  projectsData.forEach((project) => {
-    const mediaContent = project.videoLink
-      ? `<iframe src="${project.videoLink}" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-      : `<img src="${project.image || "default-image-path.jpg"}" alt="${
-          project.title
-        }" style="width:100%; height:auto;">`;
-
-    const techStackContent = project.techStack
-      .map((tech) => {
-        return `<li>${tech},</li>`;
-      })
-      .join("");
-
-    const projectHTML = `
-                <div class="project-container with-fadein-animation">
-                    <article class="project-article">
-                        <section>
-                            ${mediaContent}
-                        </section>
-                        <section class="project-click">                        
-                        <h4>${project.title}</h4>
-                        <br>
-                        <ul class="tech-stack-section">
-                        ${techStackContent}
-                        </ul>
-                        <p class="read-more-button">Read more!</p>
-                        <hr>
-                        <div class="project-footer">
-                        <a href="${project.links.site}" target="_blank"><span>View site</span></a>
-                        <a href="${project.links.code}" target="_blank"><span>View code</span></a>
-                        </div>
-                        </section>
-                    </article>
-                </div>
-            `;
-    projectsContainer.innerHTML += projectHTML;
-    const projectSections = document.querySelectorAll(".project-click");
-    projectSections.forEach((section, sectionIndex) =>
-      section.addEventListener("click", () => handleProjectClick(sectionIndex))
-    );
-  });
-
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      const existingFloatingWindow = document.querySelector(".floating-window");
-      if (existingFloatingWindow) {
-        existingFloatingWindow.remove();
-        projectsContainer.classList.remove("collapsed");
-      }
-    }
-  });
-
-  const today = new Date();
-  const dateBirth = new Date("1998-08-26");
-  let yearsOld = today.getFullYear() - dateBirth.getFullYear();
-  const hasBirthdayPassed =
-    today.getMonth() > dateBirth.getMonth() ||
-    (today.getMonth() === dateBirth.getMonth() &&
-      today.getDate() >= dateBirth.getDate());
-  if (!hasBirthdayPassed) {
-    yearsOld--;
-  }
-
-  document.getElementById("years-old").innerText = yearsOld;
-  document.getElementById(
-    "copyright-text"
-  ).innerText = `© ${today.getFullYear()} Pere Palacín Pallàs - All Rights Reserved`;
-});

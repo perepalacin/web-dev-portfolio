@@ -9,14 +9,14 @@ let isLight = true;
 
 
 toggle.addEventListener("click", modeSwitch);
-isLight ? label.innerText = "Dark mode" : label.innerText = "Light mode";
+// isLight ? label.innerText = "Dark mode" : label.innerText = "Light mode";
 isLight ? sunIcon.style.display = 'none' : sunIcon.style.display = 'block';
 isLight ? moonIcon.style.display = 'block' : moonIcon.style.display = "none";
 
 
 function modeSwitch() {
   isLight = !isLight;
-  isLight ? label.innerText = "Dark Mode" : label.innerText = "Light mode";
+  // isLight ? label.innerText = "Dark Mode" : label.innerText = "Light mode";
   isLight ? sunIcon.style.display = 'none' : sunIcon.style.display = "block";
   isLight ? moonIcon.style.display = 'block' : moonIcon.style.display = "none";
 
