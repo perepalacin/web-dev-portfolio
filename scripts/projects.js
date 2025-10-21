@@ -295,18 +295,42 @@ import { projectsData } from "./consts/project-data";
             const dateBirth = new Date("1998-08-26");
             let yearsOld = today.getFullYear() - dateBirth.getFullYear();
             const hasBirthdayPassed =
-                today.getMonth() > dateBirth.getMonth() ||
-                (today.getMonth() === dateBirth.getMonth() &&
-                    today.getDate() >= dateBirth.getDate());
-            if (!hasBirthdayPassed) {
-                yearsOld--;
-            }
+            today.getMonth() > dateBirth.getMonth() ||
+            (today.getMonth() === dateBirth.getMonth() &&
+            today.getDate() >= dateBirth.getDate());
+            
+            const startDate = new Date("2024-07-28"); 
+            let yearsOfExpText = "";
 
+            let totalMonths = (today.getFullYear() - startDate.getFullYear()) * 12 + (today.getMonth() - startDate.getMonth());
+
+            if (today.getDate() < startDate.getDate()) {
+                totalMonths--;
+            }
+            
+            const X = Math.floor(totalMonths / 12);
+            const M = totalMonths % 12;
+
+            if (M >= 0 && M <= 4) {
+                yearsOfExpText = `a little over ${X} years of professional experience `;
+            } else if (M >= 5 && M <= 8) {
+                yearsOfExpText = `over ${X} years of  professional experience `;
+            } else {
+                yearsOfExpText = `almost ${X + 1} years of  professional experience`;
+            }
+            
             const yearsOldElement = document.getElementById("years-old");
             if (yearsOldElement) {
                 yearsOldElement.innerText = yearsOld;
             }
+
+            const yearsOfExpElement = document.getElementById("years-exp");
+            if (yearsOfExpElement) {
+                yearsOfExpElement.innerText = yearsOfExpText;
+            }
+
             
+
             const copyrightElement = document.getElementById("copyright-text");
             if (copyrightElement) {
                 copyrightElement.innerText = `© ${today.getFullYear()} Pere Palacín Pallàs - All Rights Reserved`;

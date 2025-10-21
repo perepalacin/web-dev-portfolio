@@ -38,9 +38,9 @@ const careerData = {
     education: [
         {
             institution: "Universitat Politècnica de Catalunya (UPC)",
-            degree: "Máster",
+            degree: "Master of Science",
             imageUrl: "/images/upc.svg",
-            fieldOfStudy: "Ingeniería industrial",
+            fieldOfStudy: "Industrial Technology Engineering",
             startDate: new Date("2021-09-01"),
             endDate: new Date("2023-02-28"),
             minor: "Minor in Mechanical Engineering",
@@ -64,9 +64,9 @@ const careerData = {
         },
         {
             institution: "Universitat Politècnica de Catalunya (UPC)",
-            degree: "Grado en Ingeniería en Tecnologías Industriales",
+            degree: "Bachelor of Science",
             imageUrl: "/images/upc.svg",
-            fieldOfStudy: "Ingeniería industrial",
+            fieldOfStudy: "Industrial Technology Engineering",
             startDate: new Date("2016-09-01"),
             endDate: new Date("2021-07-31"),
             grade: "6.5/10",
