@@ -18,6 +18,8 @@ projectsData.forEach((project) => {
  * @param {string} [className]
  * @param {string} [text]
  * @returns {HTMLElement}
+ *
+ * 
  */
 function createElement(tag, className, text) {
     const element = document.createElement(tag);

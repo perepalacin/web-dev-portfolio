@@ -32,6 +32,107 @@ export const projectsData = [
         site: "https://github.com/perepalacin/finance-tracker",
         code: "https://github.com/perepalacin/finance-tracker",
       },
+  },
+      {
+      title: "Caixabank Hackaton",
+      videoLink:
+        "https://www.youtube.com/watch?v=BL8MriPiRgg",
+      description:
+        "Finished 9th out of 261 participants in a Virtual Hackaton related to finance where I developed a, Spring Boot based, Backend API for an auction system.",
+      functionalities: [
+        "Allow users to scrap third party websites to scout for Real state information.",
+        "Save thier financial status and mortages in MySQL",
+        "Set a bidding system based on queuing messagues on a list using RabbitMQ",
+        "Build a production ready deployment entrypoint using docker",
+      ],
+      techStack: [
+        "java",
+        "springboot",
+        "Docker",
+        "mysql",
+        "hibernate",
+        "python"
+      ],
+      tags: [
+        "SpringSecurity",
+        "SpringJPA",
+        "OOP",
+        "Docker",
+        "RabbitMQ",
+        "QueueingList",
+      ],
+      links: {
+        site: "https://nuwe.io/hackathons/caixabank-tech-challenges-round-3?section=leaderboard",
+        code: "https://www.youtube.com/watch?v=BL8MriPiRgg",
+      },
+  },
+    {
+      title: "Ecommerce microservice",
+      videoLink:
+        "https://www.youtube.com/watch?v=MVkPzm404Bo",
+      description:
+        "Ecommerce site built leveraging Microservices and Spring Cloud API",
+      functionalities: [
+        "Fully SSR frontend built with Astro and Preact Astro Islands",
+        "Split the API into microservices for each functionality (Auth, Shipping, Orders, Cart)",
+        "Ensure independence between microservices, data is persisted in different databases.",
+        "Used Spring API Cloud to build a very simple API Gateway to handle all incoming requests.",
+      ],
+      techStack: [
+        "java",
+        "springboot",
+        "preact",
+        "astro",
+        "mysql",
+        "hibernate",
+      ],
+      tags: [
+        "SpringCloudAPI",
+        "Microservices",
+        "ApiGatewaiy",
+        "Astro",
+        "SSR",
+        "Microservices",
+      ],
+      links: {
+        site: "https://github.com/perepalacin/ecommerce-microservice",
+        code: "https://github.com/perepalacin/ecommerce-microservice",
+      },
+  },
+    {
+      title: "Progressive Overlords",
+      videoLink:
+        "https://www.youtube.com/watch?v=3ZlLuygKth8",
+      description:
+        "Workout Tracker built with Spring Boot (Java), PostgreSQL (Spring JDBC) and HTMX + JavaScript.",
+      functionalities: [
+        "The main goal of this project was to experiment with HTMX, a library that offers a new approach to frontend",
+        "Allow users to create routines, log their workouts, and share them with their friends or random people on the internet.",
+        "Rich and interactive UI completely Server Side Rendered (SSR) with only 400 LoC of JavaScript thanks to JTE and HTMX.",
+        "Reduce frontend complexity by using SSR templates",
+      ],
+      techStack: [
+        "java",
+        "springboot",
+        "htmx",
+        "javascript",
+        "postgres",
+        "maven",
+      ],
+      tags: [
+        "SpringSecurity",
+        "SpringJDBC",
+        "OOP",
+        "Object Oriented Programming",
+        "Forms",
+        "SQLRelations",
+        "HTMX",
+        "SSR",
+      ],
+      links: {
+        site: "https://github.com/perepalacin/progressive-overlords",
+        code: "https://github.com/perepalacin/progressive-overlords",
+      },
     },
     {
       title: "Whatsapp FullStack Clone",
