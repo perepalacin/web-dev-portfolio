@@ -178,7 +178,7 @@ function renderExperience(experience) {
             techDiv.appendChild(createElement("p", "tech-stack", "Tech Stack:"));
             job.techStack.forEach(item => {
                 const img = createElement('img');
-                img.src = `../../..images/${item}.svg`;
+                img.src = `images/${item}.svg`;
                 img.width = 28;
                 img.height = 28;
                 techDiv.appendChild(img);

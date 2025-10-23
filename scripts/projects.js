@@ -1,4 +1,4 @@
-import { projectsData } from "consts/project-data";
+import { projectsData } from "./consts/project-data";
         import { selectedTechnologies, handleFilterClick } from "filter-menu";
 
         const showResultsLabel = document.getElementById("show-results-label");

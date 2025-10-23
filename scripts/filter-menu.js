@@ -1,4 +1,4 @@
-import { projectsData } from "consts/project-data";
+import { projectsData } from "./consts/project-data";
 import { renderProjectsGrid, renderFiltersBar } from "projects";
 const techStack = [];
 
