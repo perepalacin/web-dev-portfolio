@@ -2,7 +2,7 @@ const careerData = {
     experience: [
         {
             jobTitle: "Software Engineer",
-            imageUrl: "/images/evinova.png",
+            imageUrl: "images/evinova.png",
             company: "Evinova (an AstraZeneca company)",
             employmentType: "Jornada completa",
             startDate: new Date("2025-07-01"),
@@ -19,7 +19,7 @@ const careerData = {
         },
         {
             jobTitle: "Junior Frontend Software Engineer",
-            imageUrl: "/images/npaw.png",
+            imageUrl: "images/npaw.png",
             company: "NPAW",
 
             employmentType: "Jornada completa",
@@ -39,7 +39,7 @@ const careerData = {
         {
             institution: "Universitat Politècnica de Catalunya (UPC)",
             degree: "Master of Science",
-            imageUrl: "/images/upc.svg",
+            imageUrl: "images/upc.svg",
             fieldOfStudy: "Industrial Technology Engineering",
             startDate: new Date("2021-09-01"),
             endDate: new Date("2023-02-28"),
@@ -49,7 +49,7 @@ const careerData = {
         {
             institution: "Chalmers University of Technology",
             degree: "Master's Thesis Exchange Student",
-            imageUrl: "/images/chalmers.png",
+            imageUrl: "images/chalmers.png",
             fieldOfStudy: "Mechanics and Maritime Sciences",
             startDate: new Date("2023-01-01"),
             endDate: new Date("2023-07-31"),
@@ -65,7 +65,7 @@ const careerData = {
         {
             institution: "Universitat Politècnica de Catalunya (UPC)",
             degree: "Bachelor of Science",
-            imageUrl: "/images/upc.svg",
+            imageUrl: "images/upc.svg",
             fieldOfStudy: "Industrial Technology Engineering",
             startDate: new Date("2016-09-01"),
             endDate: new Date("2021-07-31"),
@@ -76,13 +76,13 @@ const careerData = {
         {
             title: "Certificate in Advanced English",
             organization: "Cambridge English",
-            imageUrl: "/images/cambridge.png",
+            imageUrl: "images/cambridge.png",
             expeditionDate: new Date("2016-04-01"),
         },
         {
             title: "DELF B2",
             organization: "Alliance Française de España",
-            imageUrl: "/images/af.png",
+            imageUrl: "images/af.png",
             expeditionDate: new Date("2016-01-01"),
         },
     ],
@@ -178,7 +178,7 @@ function renderExperience(experience) {
             techDiv.appendChild(createElement("p", "tech-stack", "Tech Stack:"));
             job.techStack.forEach(item => {
                 const img = createElement('img');
-                img.src = `../../../images/${item}.svg`;
+                img.src = `../../..images/${item}.svg`;
                 img.width = 28;
                 img.height = 28;
                 techDiv.appendChild(img);

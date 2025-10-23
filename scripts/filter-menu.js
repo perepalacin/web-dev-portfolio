@@ -1,5 +1,5 @@
-import { projectsData } from "./consts/project-data";
-import { renderProjectsGrid, renderFiltersBar } from "./projects";
+import { projectsData } from "consts/project-data";
+import { renderProjectsGrid, renderFiltersBar } from "projects";
 const techStack = [];
 
 export let selectedTechnologies = [];
@@ -105,13 +105,13 @@ function createTechFiltersMap(technologies) {
         const imageWrapper = createElement('div', 'filter-item');
 
         const img = createElement('img', null);
-        img.src = `/images/${route}.svg`;
+        img.src = `images/${route}.svg`;
         img.alt = route;
         img.width = 28;
         img.height = 28;
         img.onerror = function() { this.style.display = 'none'; };
         const img2 = createElement('img', null);
-        img2.src = `/images/${route}.png`;
+        img2.src = `images/${route}.png`;
         img2.alt = route;
         img2.width = 28;
         img2.height = 28;

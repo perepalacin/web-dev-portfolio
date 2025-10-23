@@ -1,5 +1,5 @@
-import { projectsData } from "./consts/project-data";
-        import { selectedTechnologies, handleFilterClick } from "./filter-menu";
+import { projectsData } from "consts/project-data";
+        import { selectedTechnologies, handleFilterClick } from "filter-menu";
 
         const showResultsLabel = document.getElementById("show-results-label");
 
@@ -70,9 +70,9 @@ import { projectsData } from "./consts/project-data";
             return technologies.map(route => {
                 return `
                     <div class="tech-icon-item">
-                        <img src="/images/${route}.svg" alt="${route} icon" width="24" height="24" 
+                        <img src="images/${route}.svg" alt="${route} icon" width="24" height="24" 
                              onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
-                        <img src="/images/${route}.png" alt="${route} icon" width="24" height="24" class="hidden" 
+                        <img src="images/${route}.png" alt="${route} icon" width="24" height="24" class="hidden" 
                              onerror="this.style.display='none';" />
                     </div>
                 `;
@@ -355,13 +355,13 @@ import { projectsData } from "./consts/project-data";
                 const imageWrapper = createElement('div', 'filter-item tech-selected');
 
                 const img = createElement('img', null);
-                img.src = `/images/${route}.svg`;
+                img.src = `images/${route}.svg`;
                 img.alt = route;
                 img.width = 28;
                 img.height = 28;
                 img.onerror = function () { this.style.display = 'none'; };
                 const img2 = createElement('img', null);
-                img2.src = `/images/${route}.png`;
+                img2.src = `images/${route}.png`;
                 img2.alt = route;
                 img2.width = 28;
                 img2.height = 28;
