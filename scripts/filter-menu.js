@@ -1,5 +1,5 @@
-import { projectsData } from "./consts/project-data";
-import { renderProjectsGrid, renderFiltersBar } from "./projects";
+import { projectsData } from "./consts/project-data.js";
+import { renderProjectsGrid, renderFiltersBar } from "./projects.js";
 const techStack = [];
 
 export let selectedTechnologies = [];
