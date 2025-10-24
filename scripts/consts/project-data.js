@@ -48,7 +48,7 @@ export const projectsData = [
       techStack: [
         "java",
         "springboot",
-        "Docker",
+        "docker",
         "mysql",
         "hibernate",
         "python"

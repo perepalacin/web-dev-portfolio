@@ -740,9 +740,9 @@ iframe {
 }
 
 #career-viewer-root {
-  padding: 0rem 4rem;
+  width: 90%;
   @media(min-width: 768px) {
-    padding: 0;
+    width: 100%;
   }
 }
 
